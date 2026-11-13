@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciamento de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="navbar-brand">
+            Gerenciamento de Tarefas
+        </div>
+
+        <nav class="navbar-links">
+            <a href="cadastro_usuarios.html">Cadastro de Usuários</a>
+            <a href="cadastro_tarefas.html">Cadastro de Tarefas</a>
+            <a href="gerenciar_tarefas.html">Gerenciar Tarefas</a>
+        </nav>
+
+    </header>
+
+    <main class="container-kanban">
+
+        <h1>Tarefas</h1>
+
+        <div class="kanban-board">
+
+            <div class="kanban-column">
+
+                <h2>A Fazer</h2>
+
+                <div class="task-list" id="list-a-fazer"></div>
+
+            </div>
+ 
+            <div class="kanban-column">
+
+                <h2>Fazendo</h2>
+
+                <div class="task-list" id="list-fazendo"></div>
+
+            </div>
+
+            <div class="kanban-column">
+
+                <h2>Pronto</h2>
+
+                <div class="task-list" id="list-pronto"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

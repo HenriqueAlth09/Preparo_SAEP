@@ -1,0 +1,270 @@
+
+/* Configurações gerais da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* Menu principal */
+.navbar {
+    background-color: #007bff;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Área dos formulários */
+.container {
+    padding: 30px 40px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    width: 320px;
+    padding: 8px 10px;
+
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+}
+
+
+/* Botão de cadastro */
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+
+    border: none;
+    padding: 8px 18px;
+
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
+
+/* Mensagens exibidas pelo sistema */
+.mensagem {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mensagem.sucesso {
+    color: #198754;
+}
+
+.mensagem.erro {
+    color: #dc3545;
+}
+
+
+/* Quadro de organização das tarefas */
+.container-kanban {
+    padding: 30px 40px;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 20px;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.kanban-column {
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+
+    width: 320px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-column h2 {
+    font-size: 16px;
+    background-color: #e9ecef;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #dcdcdc;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+/* Lista de tarefas de cada coluna */
+.task-list {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    flex-grow: 1;
+}
+
+
+/* Cartões com as informações das tarefas */
+.task-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+
+    padding: 15px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.task-card p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #000000;
+}
+
+.task-card strong {
+    font-weight: bold;
+}
+
+
+/* Botões de editar e excluir */
+.card-actions {
+    margin-top: 10px;
+
+    display: flex;
+    gap: 6px;
+}
+
+.btn-editar,
+.btn-excluir {
+    background-color: #007bff;
+    color: #ffffff;
+
+    border: none;
+    padding: 5px 12px;
+
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+.btn-excluir:hover {
+    background-color: #bd2130;
+}
+
+
+/* Opções para mudar o andamento da tarefa */
+.status-change {
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+}
+
+.status-change span {
+    font-size: 12px;
+    font-weight: bold;
+
+    display: block;
+    margin-bottom: 5px;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* Botões de alteração de status */
+.btn-status {
+    background-color: #007bff;
+    color: #ffffff;
+
+    border: none;
+    padding: 4px 10px;
+
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-status:hover {
+    background-color: #0056b3;
+}
